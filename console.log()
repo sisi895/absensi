@@ -1,0 +1,1 @@
+console.log(name, date, shift, status, checkIn, checkOut);

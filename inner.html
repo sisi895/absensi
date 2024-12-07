@@ -1,0 +1,16 @@
+function addRowToTable(name, date, shift, status, checkIn, checkOut, photoUrl) {
+    const tableBody = document.querySelector('#attendanceTable tbody');
+    const newRow = document.createElement('tr');
+
+    newRow.innerHTML = `
+        <td>${name}</td>
+        <td>${date}</td>
+        <td>${shift}</td>
+        <td>${status}</td>
+        <td>${checkIn}</td>
+        <td>${checkOut}</td>
+        <td><img src="${photoUrl}" alt="Foto" width="50"></td>
+    `;
+
+    tableBody.appendChild(newRow);
+}

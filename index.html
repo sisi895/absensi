@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catatan Kehadiran</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Catatan Kehadiran</h2>
+    <form id="attendanceForm">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" required>
+        <br>
+        <label for="date">Tanggal:</label>
+        <input type="date" id="date" required>
+        <br>
+        <label for="shift">Shift:</label>
+        <select id="shift" required>
+            <option value="pagi">Pagi</option>
+            <option value="siang">Siang</option>
+        </select>
+        <br>
+        <label for="status">Status Kehadiran:</label>
+        <select id="status" required>
+            <option value="hadir">Hadir</option>
+            <option value="izin">Izin</option>
+            <option value="off">Off</option>
+            <option value="sakit">Sakit</option>
+            <option value="tidak_masuk">Tidak Masuk</option>
+        </select>
+        <br>
+        <div id="attendanceDetails">
+            <label for="checkIn">Jam Masuk:</label>
+            <input type="time" id="checkIn" required>
+            <br>
+            <label for="checkOut">Jam Pulang:</label>
+            <input type="time" id="checkOut" required>
+            <br>
+            <label for="photo">Foto Dokumentasi:</label>
+            <input type="file" id="photo" accept="image/*" required>
+            <br>
+        </div>
+        <button type="submit">Simpan Kehadiran</button>
+    </form>
+
+    <h3>Data Kehadiran</h3>
+    <table id="attendanceTable">
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Tanggal</th>
+                <th>Shift</th>
+                <th>Status Kehadiran</th>
+                <th>Jam Masuk</th>
+                <th>Jam Pulang</th>
+                <th>Foto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data kehadiran akan ditambahkan di sini -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

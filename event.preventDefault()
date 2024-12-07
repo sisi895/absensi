@@ -1,0 +1,4 @@
+document.getElementById('attendanceForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Mencegah pengiriman formulir secara default
+    // Logika untuk memproses data
+});
